@@ -61,5 +61,6 @@ $ sudo docker service rm <service-name>
 
 ```
 docker build --platform linux/amd64 -t akshay0909/sam:2.0.bymac .
+docker run --platform linux/amd64 --name samplecont -d -p 8080:8080 akshay0909/samplemaven:2.0 
 ```
 
