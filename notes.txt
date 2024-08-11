@@ -875,7 +875,7 @@ $ sudo curl -L "https://github.com/docker/compose/releases/download/1.24.0/docke
 $ sudo chmod +x /usr/local/bin/docker-compose
 	
 # How to check docker compose is installed or not
-$ docker-compose --version
+$ docker-compose --version or docker compose version 
 
 ===================================================
 Deploy Spring Boot + MySQL  with Docker Compose
