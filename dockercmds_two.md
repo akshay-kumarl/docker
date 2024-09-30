@@ -27,3 +27,9 @@
 23. docker login & logout :- Login to Dockerhub.io and Logout accordingly
 24. sudo usermod -a -G docker $USER :- Add an user to Docker group to avoid root privileges 
 ```
+
+---
+
+> docker build -t sample/cus:v1 --progress=plain -f doofile . --no-cache
+> 
+
