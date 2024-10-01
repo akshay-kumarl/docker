@@ -31,5 +31,11 @@
 ---
 
 > docker build -t sample/cus:v1 --progress=plain -f doofile . --no-cache
-> 
+ 
+---
 
+<img width="547" alt="Screenshot 2024-10-01 at 11 20 13 AM" src="https://github.com/user-attachments/assets/5b446d7b-ce71-45f1-a163-4e02c045e75c">
+
+---
+
+<img width="547" alt="Screenshot 2024-10-01 at 11 19 56 AM" src="https://github.com/user-attachments/assets/56bf002f-f9f1-4395-9813-1f70378bc4c4">
