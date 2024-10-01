@@ -9,7 +9,7 @@ this repo contains docker-related notes and files.
 
 ---
 
-### Docker portainer  (visval viewer)
+### Docker portainer  (visual viewer)
 
 ```
 docker create volume create portainerdata
