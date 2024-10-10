@@ -1,0 +1,43 @@
+version: '3.8'
+services:
+  app:
+    image: node:14
+    working_dir: /app
+    volumes:
+      - ./:/app                 # Mount the current directory to /app inside the container
+    ports:
+      - "3000:3000"             # Expose port 3000 of the container to the host
+    environment:
+      - NODE_ENV=development
+      - DB_HOST=db              # Reference the db service using the network alias
+      - DB_USER=myuser
+      - DB_PASSWORD=mypassword
+      - DB_NAME=mydb
+    command: npm start          # The command to start the app (can be customized)
+    depends_on:
+      - db                      # Wait for the db service to start before the app
+    networks:
+      - app-network             # Connect app to the custom network
+
+  db:
+    image: postgres:13
+    environment:
+      POSTGRES_USER: myuser
+      POSTGRES_PASSWORD: mypassword
+      POSTGRES_DB: mydb
+    volumes:
+      - pgdata:/var/lib/postgresql/data   # Persist PostgreSQL data
+    networks:
+      - app-network                        # Connect db to the custom network
+
+volumes:
+  pgdata:                        # Named volume for persistent database storage
+
+networks:
+  app-network:                   # Custom network for communication between services
+    driver: bridge                # The default network type (bridge) for containers
+
+
+
+to run this file use below cmd
+docker-compose up
