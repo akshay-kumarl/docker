@@ -1,0 +1,23 @@
+DOCKER VOLUME 
+
+docker run -d --name my-container -v /path/on/host:/path/in/container my-image
+
+
+docker run -d \
+  --name mysql-container \
+  -e MYSQL_ROOT_PASSWORD=my-secret-pw \
+  -v my-mysql-data:/var/lib/mysql \
+  mysql:latest
+
+
+
+EXAMPLE 
+version: '3'
+services:
+  app:
+    image: python:3.8
+    volumes:
+      - .:/code:ro
+    working_dir: /code
+    command: python app.py
+
