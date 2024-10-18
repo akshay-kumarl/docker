@@ -52,7 +52,7 @@ $ sudo docker service rm <service-name>
 
 
 
-
+---
 
 
 
@@ -64,3 +64,21 @@ docker build --platform linux/amd64 -t akshay0909/sam:2.0.bymac .
 docker run --platform linux/amd64 --name samplecont -d -p 8080:8080 akshay0909/samplemaven:2.0 
 ```
 
+
+---
+
+
+docker port <containerid>
+docker diff <containerid>
+docker wait <containerid>
+docker kill <containerid>
+docker attach <containerid>
+docker cp <containerid>:<source> <destination>
+docker history <imagename>
+docker logs -f <containerid>
+docker stop $(docker ps -q)
+docker rm $(docker ps -a -q)
+docker rmi $(docker images -q)
+docker-compose restart
+docker-compose rm
+docker-compose build
