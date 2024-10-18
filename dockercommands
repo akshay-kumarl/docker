@@ -1,0 +1,14 @@
+docker port <containerid>
+docker diff <containerid>
+docker wait <containerid>
+docker kill <containerid>
+docker attach <containerid>
+docker cp <containerid>:<source> <destination>
+docker history <imagename>
+docker logs -f <containerid>
+docker stop $(docker ps -q)
+docker rm $(docker ps -a -q)
+docker rmi $(docker images -q)
+docker-compose restart
+docker-compose rm
+docker-compose build
