@@ -37,7 +37,9 @@ networks:
   app-network:                   # Custom network for communication between services
     driver: bridge                # The default network type (bridge) for containers
 
+===================================================================================================================
+
+save file as: docker-compose.yml
 
 
-to run this file use below cmd
-docker-compose up
+to run this file use this cmd: docker-compose up
