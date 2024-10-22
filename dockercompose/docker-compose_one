@@ -1,6 +1,6 @@
 ### docker-compose.yml
 
-```
+
 version: '3.8'
 
 services:
@@ -31,10 +31,13 @@ secrets:
 
 volumes:
   db-data:
-```
+
 
 ---
 
 Steps: <br/>
 Create a secrets folder in the same directory as your docker-compose.yml file.<br/>
 Inside that folder, create a db_password.txt file with your secret content (the database password, in this case).
+
+
+not needed docker swarm secrets 
