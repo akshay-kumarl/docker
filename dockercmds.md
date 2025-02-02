@@ -1,5 +1,5 @@
 
-# docker imp commands 
+# Docker Imp Commands 
 
 ```
 
@@ -51,13 +51,7 @@ $ sudo docker service rm <service-name>
 
 
 
-
----
-
-
-
-
-# docker imp unique commands 
+# Docker Unique Commands 
 
 ```
 docker build --platform linux/amd64 -t akshay0909/sam:2.0.bymac .
@@ -67,8 +61,8 @@ docker run --platform linux/amd64 --name samplecont -d -p 8080:8080 akshay0909/s
 
 ---
 
-
-docker port <containerid>
+```
+docker port <containerid> 
 docker diff <containerid>
 docker wait <containerid>
 docker kill <containerid>
@@ -82,3 +76,10 @@ docker rmi $(docker images -q)
 docker-compose restart
 docker-compose rm
 docker-compose build
+```
+
+---
+
+
+`docker run --memory=512m --cpus=1 <image_name>`
+
